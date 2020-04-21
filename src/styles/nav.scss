@@ -1,0 +1,62 @@
+.nav-bar {
+  display: flex;
+  width: 100%;
+  min-height: 5rem;
+  background-color: cornflowerblue;
+
+}
+
+.nav-header{
+  padding: 0.5rem;
+}
+
+
+.fa-star {
+  color: gold;
+  font-size: 3rem !important;
+  margin: 1rem 0 0.5rem -10rem;
+}
+
+.fa-search, .fa-shopping-cart{
+  color: white !important;
+  font-size: 2rem !important;
+  margin: 1.5rem 0.5rem 0 0.5rem;
+}
+
+.card-img-wrap {
+  margin: 1rem;
+}
+
+.card{
+  width: 15rem;
+}
+
+.add-btn {
+  border: 1px solid gold;
+  background-color: gold;
+  border-radius: 30px;
+  min-width: 6rem;
+  padding: 0 1rem;
+  margin-left: 5.5rem;
+
+}
+
+.display-price{
+  text-decoration: line-through;
+  padding: 0 1rem;
+}
+
+.price-wrap{
+  display: flex;
+  margin-left: 2rem;
+}
+
+.discount{
+  color: green;
+  font-size: 0.75rem;
+  padding-top: 0.25rem;
+}
+
+.item-name {
+  margin-top: 2rem;
+}
