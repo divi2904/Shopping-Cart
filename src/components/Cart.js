@@ -29,10 +29,10 @@ class Cart extends Component{
                                     </div>
                                 
                                     <div className="item-desc">
-                                        <span className="title">{item.name}</span>
+                                        <span className="title item-title">{item.name}</span>
                                         <div className="price-wrap">
-                                            <p><b>{item.price.actual}$</b></p>
-                                            <p className="display-price">{item.price.display}$</p>
+                                            <p><b>${item.price.actual}</b></p>
+                                            <p className="display-price">${item.price.display}</p>
                                             <p className="discount"><b>{item.discount}% off</b></p>
                                         </div>
                                         <p>
@@ -42,7 +42,7 @@ class Cart extends Component{
                                             <Link to="/cart"><i className="material-icons" onClick={()=>{this.handleAddQuantity(item.id)}}>arrow_drop_up</i></Link>
                                             <Link to="/cart"><i className="material-icons" onClick={()=>{this.handleSubtractQuantity(item.id)}}>arrow_drop_down</i></Link>
                                         </div>
-                                        <button className="waves-effect waves-light btn pink remove" onClick={()=>{this.handleRemove(item.id)}}>Remove</button>
+                                        <button className="waves-effect waves-light btn blue remove" onClick={()=>{this.handleRemove(item.id)}}>Remove</button>
                                     </div>
                                     
                                 </li>

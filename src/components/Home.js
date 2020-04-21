@@ -22,8 +22,8 @@ import cartData from './reducers/cart.json'
                         <div className="card-content">
                             
                             <div className="price-wrap">
-                                <p><b>{item.price.actual}$</b></p>
-                                <p className="display-price">{item.price.display}$</p>
+                                <p><b>${item.price.actual}$</b></p>
+                                <p className="display-price">${item.price.display}</p>
                                 <p className="discount"><b>{item.discount}% off</b></p>
                             </div>
                         </div>
