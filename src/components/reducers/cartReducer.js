@@ -1,7 +1,6 @@
 import { ADD_TO_CART,REMOVE_ITEM,SUB_QUANTITY,ADD_QUANTITY,ADD_SHIPPING } from '../actions/action-types/cart-actions'
 import CartData from './cart.json'
 
-console.log(CartData)
 const initState = {
     items: CartData.items,
     addedItems:[],
@@ -12,7 +11,6 @@ const cartReducer= (state = initState,action)=>{
     
     //INSIDE HOME COMPONENT
     if(action.type === ADD_TO_CART){
-            debugger
           let addedItem = state.items.find(item=> item.id === action.id)
           //check if the action id exists in the addedItems
          let existed_item= state.addedItems.find(item=> action.id === item.id)
@@ -43,7 +41,6 @@ const cartReducer= (state = initState,action)=>{
         
         //calculating the total
         let newTotal = state.total - (itemToRemove.price * itemToRemove.quantity )
-        console.log(itemToRemove)
         return{
             ...state,
             addedItems: new_items,

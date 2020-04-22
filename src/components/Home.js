@@ -9,7 +9,6 @@ import cartData from './reducers/cart.json'
     }
 
     render(){
-        console.log(cartData)
         let itemList = this.props.items.map(item=>{
             return(
                 <div className="card" key={item.id}>
